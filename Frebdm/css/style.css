@@ -1,0 +1,160 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+.nav-bar{
+    display: flex;
+    position: sticky;
+    justify-content: space-around;
+    background-color: #729a98;
+    padding-top: 1%;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li{
+    list-style: none;
+}
+.nav-bar ul li:hover{
+    border-bottom: 3px solid white;
+}
+.nav-bar ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 0px 15px;
+    border-radius: 20px;
+}
+/* .nav-bar ul li a:hover{
+    color: white;
+    background-color: #1c5165;
+} */
+.nav-item{
+    padding: 0px 15px;
+}
+.nav-item:hover{
+    padding: 0px 15px;
+    cursor: pointer;
+}
+.secondary-heading{
+    font-size: 22px;
+    color: white;
+}
+.secondary-heading:hover{
+    cursor: pointer;
+}
+#home{
+    position: relative;
+}
+#home .wrapper{
+    margin: 0rem auto;
+    overflow: hidden;
+}
+.slider-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* height: 50%; */
+}
+#home .slider-container{
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    width: 100%;
+    height: 304px;
+    animation: slide 15s ease infinite;
+}
+#home .slider-butto{
+    position: absolute;
+    bottom: 0%;
+    left: 45%
+}
+#home .slider-butto .dot{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 3rem;
+    background-color: white;
+    margin: .3rem .4rem;
+}
+#home .slider-butto .dot:active{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 1rem;
+    background-color: rgb(0, 0, 0);
+    margin: .3rem .4rem;
+}
+
+.slide-img{
+    height: 100%;
+    width: 100%;
+}
+.icon-white{
+    color: white
+}
+.center{
+    text-align: center;
+}
+.h-primary{
+padding: 12px;
+color:  #729a98;
+}
+.detail-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%
+}
+#description-container p{
+    padding: 5%;
+}
+#description-container h2{
+    padding-bottom: 20px;
+}
+#description-container div{
+    display: flex;
+    justify-content: center;
+}
+.icon-size{
+    font-size: 3rem;
+}
+
+.desc-padding{
+    padding: 1.5% 1% 1.5% 1%;
+}
+#description-container{
+    padding-top: 3%;
+    border: 1px solid lightsteelblue;
+    margin-top: 5%;
+    background-color: #ebf3eb;
+}
+#detail-container{
+    padding-top: 4%
+}
+
+.description-item p span{
+    font-size: 2rem;
+    color: #1c5165 ;
+}
+@keyframes slide {
+    0%{transform: translateX(0%);}
+    10%{transform: translateX(-100%);}
+    20%{transform: translateX(-100%);}
+    30%{transform: translateX(-100%);}
+    40%{transform: translateX(-200%);}
+    50%{transform: translateX(-200%);}
+    60%{transform: translateX(-200%);}
+    70%{transform: translateX(0%);}
+    80%{transform: translateX(0%);}
+    90%{transform: translateX(0%);}
+    100%{transform: translateX(0%);}
+}
